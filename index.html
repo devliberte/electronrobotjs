@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <button id="my-button">Tıkla</button>
+
+    <script>
+      const button = document.getElementById('my-button');
+      button.addEventListener('click', () => {
+        console.log('tuşa basıldı');
+        electron.keyTap('f10');
+      });
+    </script>
+  </body>
+</html>
